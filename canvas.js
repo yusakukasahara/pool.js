@@ -17,3 +17,17 @@ Canvas2D.prototype.clear = function() {
 Canvas2D.prototype.drawImage = function(image, position) {
   this._canvasContext.drawImage(image, position.x, position.y);
 };
+
+let Canvas = new Canvas2D();
+
+//Testing
+let image = new Image();
+image.src = './assets/sprites/spr_background4.png';
+// Canvas.drawImage(image, { x: 0, y: 0 });
+
+// let draw = () => {};
+// draw();
+
+setTimeout(() => {
+  Canvas.drawImage(image, { x: 0, y: 0 });
+}, 1000);
